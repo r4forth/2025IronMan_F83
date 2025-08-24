@@ -34,3 +34,16 @@ DOS 下的經典 F83 範例教學，以鄒靖寧、黃大一老師的經典 Fort
 28. [OpenFirmware 程式開發II]()
 29. [Forth 資源]()
 30. [結語]()
+
+## 參考資料
+
+01. [符式(Forth)F83入門 黃大一、鄒靖寧合著 松崗電腦圖書資料有限公司]()
+02. [Start Forth 繁體中文翻譯本]()
+03. [Starting Forth 英文版](https://www.forth.com/starting-forth/)
+04. [Thinking Forth 英文版](https://thinking-forth.sourceforge.net/)
+05. [Thinking Forth 繁體中文翻譯本](https://web.archive.org/web/20060713182848/http%3A//www.eforth.com.tw%3A80/academy-n/library/thinkingForth.htm) 
+
+## 軟體下載連結
+
+1. [8086 F83 2.1](https://winworldpc.com/product/8086-forth-83/210)
+2. 
