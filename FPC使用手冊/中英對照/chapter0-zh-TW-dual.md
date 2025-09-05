@@ -471,325 +471,140 @@ December, 1988
 San Mateo, California
 加利福尼亞州聖馬刁
 
-
-F-PC USERS MANUAL
-F-PC 用戶手冊
-
-
-
+```
 CONTENTS
-內容
 
-
-F-PC User's Manual i
-F-PC 用戶手冊 i
-
-
-Preface to the Third Edition ii
-第三版序言 ii
-
-
-Preface to the First Edition: A Tradition of Public Domain Forth iii
-第一版序言：第四版的公共領域傳統 iii
-
-
-1. Introduction to F-PC 1
-一、F-PC 1 簡介
-1. How did we get here? 1
-1. 我們是如何走到這一步的？1
-2. F-PC, what is it all about 3
-2. F-PC，這到底是怎麼回事 3
-3. Features in F-PC 2.25 4
-3. F-PC 2.25 4 中的功能
-4. New features in F-PC 3.5 5
-4. F-PC 3.5 5 的新功能
-
-
-2. Install F-PC 6
-2.安裝 F-PC 6
-1. The ZIP files 6
-1. ZIP 檔案 6
-2. Install F-PC using INSTALL.EXE 7
-2. 使用 INSTALL.EXE 7 安裝 F-PC
-3. Install F-PC without using INSTALL.EXE 8
-3.不使用 INSTALL.EXE 8 安裝 F-PC
-4. Configure F-PC 9
-4. 配置 F-PC 9
-5. Install F-PC on a dual floppy system 10
-5、在雙軟盤系統上安裝 F-PC 10
-
-
-3. Hypertext Browser 12
-3. 超文本瀏覽器 12
-1. Launch the hypertext browser 12
-1.啟動超文本瀏覽器12
-2. Navigate F-PC with the browser 13
-2. 使用瀏覽器導航 F-PC 13
-3. A sample session 14
-3. 範例會議 14
-4. A short tutorial 15
-4.簡短教程15
-
-
-4. Programming Tools 18
-4. 程式設計工具 18
-1. DUMP 18
-1. 轉儲 18
-2. The debugger 18
-2. 偵錯器 18
-3. VALUES: Constants as variables 20
-3. 值：常數作為變數 20
-4. Help words 20
-4.幫助詞20
-5. Date and time 22
-5. 日期和時間 22
-6. Comments 23
-6. 評論 23
-7. Screen control words in F-PC 23
-7. F-PC 23 中的螢幕控制詞
-8. Compilation control words 25
-8.編譯控制字25
-9. Printing source files in F-PC 26
-9. 在 F-PC 26 中列印原始檔案
-10. Global search 26
-10. 全球搜索 26
-11. ALIAS 27
-11. 別名 27
-12. Browsing a large file 27
-12. 瀏覽大文件 27
-13. The NEWZ editor 27
-13. NEWZ 編輯 27
-14. The SZ editor 28
-14. 深圳小編 28
-
-
-5. SED, the Editor 30
-5. SED，編輯 30
-1. Invoking SED editor 31
-1. 呼叫 SED 編輯器 31
-2. Using SED 32
-2. 使用 SED 32
-3. Menu and mouse control 33
-3. 菜單和鼠標控制 33
-4. Function keys 34
-4. 功能鍵 34
-5. Selecting another file to edit 36
-5. 選擇另一個檔案進行編輯 36
-6. Search and replace 37
-6.搜尋並替換37
-7. Cut, copy and paste 37
-7. 剪下、複製和粘貼 37
-8. Line and word commands 38
-8. 行和字命令 38
-9. Margin control 39
-9. 保證金控制 39
-10. Case conversion 39
-10. 大小文字轉換 39
-11. Line drawing 40
-11.線稿40
-12. Paragraph sorting 40
-12. 段落排序 40
-13. Keystroke macros 40
-13. 擊鍵巨集 40
-14. Print a file 41
-14.列印檔案 41
-15. Other help 42
-15. 其他幫助 42
-
-
-6. Sequential Files 43
-6. 順序檔案 43
-1. Sequential files in F-PC 43
-1. F-PC 43 中的順序檔案
-2. Handles 43
-2. 手柄 43
-3. Sequential file word set 45
-3. 順序檔案字集 45
-4. Conversion between sequential file and block files 49
-4. 順序檔案與區塊檔案之間的轉換 49
-5. Programming style and sequential files 50
-5、程式設計風格與順序檔案 50
-
-
-7. DOS Interface 51
-7. DOS 介面 51
-1. System interrupts and BIOS calls 51
-1.系統中斷和 BIOS 呼叫 51
-2. DOS service calls 52
-2. DOS 服務呼叫 52
-3. The DOS shell 53
-3. DOS 外殼 53
-4. BATCH commands 54
-4. BATCH 命令 54
-5. DOS memory map of F-PC 54
-5. F-PC 54 的 DOS 記憶體圖
-6. Long memory word set 58
-6.長記憶詞集58
-7. Memory allocation 59
-7、記憶體分配 59
-
-
-8. PASM, the F-PC Assembler 60
-8. PASM，F-PC 組裝器 60
-1. Prefix or postfix? 60
-1. 前綴還是後綴？60
-2. PASM glossary 61
-2. PASM 詞彙表 61
-3. Syntax comparison 63
-三、語法比較63
-4. Usage of 8086 machine registers in F-PC 63
-4. F-PC 63 中 8086 機器暫存器的使用
-5. Addressing modes 64
-5. 尋址模式 64
-6. Assembly macros in PASM 66
-6. PASM 66 中的彙編巨集
-7. Local label 66
-7. 本地標籤 66
-8. Inline code 67
-8. 內聯代碼 67
-9. Assembler style 69
-9. 彙編器樣式 69
-10. Debugging code words 70
-10.偵錯碼字70
-
-
-IX. Advanced Utilities 71
-IX. 高級實用程序 71
-1. Rebuilding the system 71
-1. 重建系統 71
-2. Turnkey systems 72
-2. 交鑰匙系統 72
-3. Macros in F-PC and SED 72
-3. F-PC 和 SED 72 中的巨集
-4. F-PC preferences 72
-4. F-PC 偏好 72
-5. Task chaining 74
-5. 任務鏈 74
-6. Control structure enhancements 75
-6. 控制結構增強 75
-7. Headless words 77
-7. 無頭詞 77
-8. Save and restore 78
-8.保存並恢復78
-9. Line editor 79
-9. 線編輯器 79
-
-
-10. User Contributions 80
-10. 用戶貢獻 80
-1. From Tom Zimmer 80
-1. 來自湯姆·季默 80
-2. From Charles Curley 84
-2. 摘自查爾斯·柯利 84
-3. From Bob Smith 85
-3. 來自鮑勃·史密斯 85
-HFLOAT/SFLOAT glossary 87
-HFLOAT/SFLOAT 詞彙表 87
-
-
-Epilogue 91
-結語 91
-How to Hang F-PC without a Long Rope 91
-如何在沒有長繩的情況下懸掛 F-PC 91
-The kitchen sink 92
-廚房水槽 92
-An invitation 92
-邀請函 92
-Forth Interest Group local chapters 93
-第四興趣小組地方分會 93
-Forth on-line resources 96
-第四個在線資源 96
-
-
-Appendix A. Glossary of the Forth Vocabulary A-1
-附錄 A. 第四詞彙表 A-1
-A1. Introduction A-1
-答 1.簡介 A-1
-A2. F-PC word glossary by category A-2
-答 2.按類別 A-2 劃分的 F-PC 詞彙表
-A3. F-PC alphabetic glossary A-12
-答 3.F-PC 字母詞彙表 A-12
-
-
-Appendix B. Samples and Tutorial Files B-1
-附錄 B. 範例和教學檔案 B-1
-B1. Memory allocation B-1
-B1.記憶體配置 B-1
-B2. User boot process B-2
-B2.使用者開機程序 B-2
-B3. F-PC keystroke macros B-3
-B3.F-PC 按鍵巨集 B-3
-B4. A sample menu file B-6
-B4.範例功能表檔案 B-6
-B5. My startup message B-7
-B5.我的啟動訊息 B-7
-B6. Subscreen scroll B-8
-乙 6.子畫面捲軸 B-8
-B7. Usage of values B-8
-乙 7.值 B-8 的用法
-B8. Popup window B-9
-B8.彈出式視窗 B-9
-
-
-Appendix C. Files in F-PC C-1
-附錄 C. F-PC C-1 中的檔案
-C1. Files on the distribution disks C-1
-C1.分發磁碟 C-1 上的檔案
-C2. Zipped files on Disk 1 C-2
-C2.磁碟 1 C-2 上的壓縮檔案
-C3. Zipped files on Disk 2 C-3
-C3.磁碟 2 C-3 上的壓縮檔案
-C4. Zipped files on Disk 3 C-5
-C4.磁碟 3 C-5 上的壓縮檔案
-
-
-Appendix D. Index D-1
-附錄 D. 索引 D-1
-
-
+F-PC User's Manual                                                  i
+Preface to the Third Edition                                        ii
+Preface to the First Edition: A Tradition of Public Domain Forth    iii
+1.   Introduction to F-PC                                           1
+        1.   How did we get here?                                   1
+        2.   F-PC, what is it all about                             3
+        3.   Features in F-PC 2.25                                  4
+        4.   New features in F-PC 3.5                               5
+2.   Install F-PC                                                   6
+        1.   The ZIP files                                          6
+        2.   Install F-PC using INSTALL.EXE                         7
+        3.   Install F-PC without using INSTALL.EXE                 8
+        4.   Configure F-PC                                         9
+        5.   Install F-PC on a dual floppy system                   10
+3.   Hypertext Browser                                              12
+        1.   Launch the hypertext browser                           12
+        2.   Navigate F-PC with the browser                         13
+        3.   A sample session                                       14
+        4.   A short tutorial                                       15
+4.   Programming Tools                                              18
+        1.   DUMP                                                   18
+        2.   The debugger                                           18
+        3.   VALUES: Constants as variables                         20
+        4.   Help words                                             20
+        5.   Date and time                                          22
+        6.   Comments                                               23
+        7.   Screen control words in F-PC                           23
+        8.   Compilation control words                              25
+        9.   Printing source files in F-PC                          26
+        10. Global search                                           26
+        11. ALIAS                                                   27
+        12. Browsing a large file                                   27
+        13. The NEWZ editor                                         27
+        14. The SZ editor                                           28
+5.   SED, the Editor                                                30
+        1.   Invoking SED editor                                    31
+        2.   Using SED                                              32
+        3.   Menu and mouse control                                 33
+        4.   Function keys                                          34
+        5.   Selecting another file to edit                         36
+        6.   Search and replace                                     37
+        7.   Cut, copy and paste                                    37
+        8.   Line and word commands                                 38
+        9.   Margin control                                         39
+        10. Case conversion                                         39
+        11. Line drawing                                            40
+        12. Paragraph sorting                                       40
+        13. Keystroke macros                                        40
+        14. Print a file                                            41
+        15. Other help                                              42
+6.   Sequential Files                                               43
+        1.   Sequential files in F-PC                               43
+        2.   Handles                                                43
+        3.   Sequential file word set                               45
+        4.   Conversion between sequential file and block files     49
+        5.   Programming style and sequential files                 50
+7.   DOS Interface                                                  51
+        1.   System interrupts and BIOS calls                       51
+        2.   DOS service calls                                      52
+        3.   The DOS shell                                          53
+        4.   BATCH commands                                         54
+        5.   DOS memory map of F-PC                                 54
+        6.   Long memory word set                                   58
+        7.   Memory allocation                                      59
+8.   PASM, the F-PC Assembler                                       60
+        1.   Prefix or postfix?                                     60
+        2.   PASM glossary                                          61
+        3.   Syntax comparison                                      63
+        4.   Usage of 8086 machine registers in F-PC                63
+        5.   Addressing modes                                       64
+        6.   Assembly macros in PASM                                66
+        7.   Local label                                            66
+        8.   Inline code                                            67
+        9.   Assembler style                                        69
+        10. Debugging code words                                    70
+IX.   Advanced Utilities                                            71
+        1.   Rebuilding the system                                  71
+        2.   Turnkey systems                                        72
+        3.   Macros in F-PC and SED                                 72
+        4.   F-PC preferences                                       72
+        5.   Task chaining                                          74
+        6.   Control structure enhancements                         75
+        7.   Headless words                                         77
+        8.   Save and restore                                       78
+        9.   Line editor                                            79
+10.   User Contributions                                            80
+        1.   From Tom Zimmer                                        80
+        2.   From Charles Curley                                    84
+        3.   From Bob Smith                                         85
+                HFLOAT/SFLOAT glossary                              87
+Epilogue                                                            91
+        How to Hang F-PC without a Long Rope                        91
+        The kitchen sink                                            92
+        An invitation                                               92
+        Forth Interest Group local chapters                         93
+        Forth on-line resources                                     96
+Appendix A.     Glossary of the Forth Vocabulary                    A-1
+        A1.   Introduction                                          A-1
+        A2.   F-PC word glossary by category                        A-2
+        A3.   F-PC alphabetic glossary                              A-12
+Appendix B.     Samples and Tutorial Files                          B-1
+        B1.   Memory allocation                                     B-1
+        B2.   User boot process                                     B-2
+        B3.   F-PC keystroke macros                                 B-3
+        B4.   A sample menu file                                    B-6
+        B5.   My startup message                                    B-7
+        B6.   Subscreen scroll                                      B-8
+        B7.   Usage of values                                       B-8
+        B8.   Popup window                                          B-9
+Appendix C.   Files in F-PC                                         C-1
+        C1.   Files on the distribution disks                       C-1
+        C2.   Zipped files on Disk 1                                C-2
+        C3.   Zipped files on Disk 2                                C-3
+        C4.   Zipped files on Disk 3                                C-5
+Appendix D.     Index                                               D-1
 Figures
-數字
-Figure 6.1. The file handle 44
-圖 6.1.檔案句柄 44
-Figure 7.1. The memory segments in F-PC 56
-圖 7.1.F-PC 56 中的記憶體段
-Figure 7.2. Data structure in a colon definition 57
-圖 7.2.冒號定義中的資料結構 57
-Figure 8.1. Comparison of assembly syntax 62
-圖 8.1.彙編語法比較 62
-Figure 8.2. Examples of local labels 68
-圖 8.2.本地標籤的例子 68
-
-
-
-
+        Figure  6.1.    The file handle                             44
+        Figure  7.1.    The memory segments in F-PC                 56
+        Figure  7.2.    Data structure in a colon definition        57
+        Figure  8.1.    Comparison of assembly syntax               62
+        Figure  8.2.    Examples of local labels                    68
+```
 
 F-PC USER'S MANUAL
-F-PC 用戶手冊
-
-
-
-
-
 THIRD EDITION FOR VERSION 3.5
-3.5 版第三版
-
-
 
 NOVEMBER 1989
-1989 年 11 月
-
-
-
 
 Offete Enterprises, Inc.
-奧菲特企業公司
-
 
 1306 South B Street
-南 B 街 1306 號
 San Mateo, CA 94402
-加利福尼亞州聖馬刁 94402
 Tel. (415) 574-8250
-電話：（415） 574-8250
 
