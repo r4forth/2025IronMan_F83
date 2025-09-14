@@ -44,3 +44,4 @@ C:\>cd fpc
 C:\FPC>F-PC.EXE
 ```
 
+![](img/05_03.png)
